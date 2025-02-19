@@ -7,7 +7,7 @@ const CurrentUser = [
         id: 'me',
         name : 'Beg Joker',
         username: '@thebegjoker',
-        ProfieImage: ProfieImage,
+        ProfileImage: ProfieImage,
         CoverPhoto: CoverPhoto
     }
 ];

@@ -1,34 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { FaThumbsUp, FaComment, FaShare } from "react-icons/fa";
-import Feeds from "../FakeApis/HomeFeedData";
-import Comment from "./Comment"; // استيراد مكون التعليقات
-
+import Comment from "./Comment";
+import { SocialContext } from "../context/SocialContext";
 const Posts = () => {
-  const [posts, setPosts] = useState(
-    Feeds.map((feed) => ({ ...feed, liked: false, showComments: false }))
-  );
-
-  const handleLike = (id) => {
-    setPosts((prevPosts) =>
-      prevPosts.map((post) =>
-        post.id === id
-          ? {
-              ...post,
-              like: post.liked ? post.like - 1 : post.like + 1,
-              liked: !post.liked,
-            }
-          : post
-      )
-    );
-  };
-
-  const toggleComments = (id) => {
-    setPosts((prevPosts) =>
-      prevPosts.map((post) =>
-        post.id === id ? { ...post, showComments: !post.showComments } : post
-      )
-    );
-  };
+const {posts,handleLike,toggleComments} = useContext(SocialContext)
+  
 
   return (
     <div className="max-w-2xl mx-auto mt-6 space-y-6">
@@ -86,7 +62,12 @@ const Posts = () => {
           </div>
 
           {/* Comments Section */}
-          {Feed.showComments && <Comment postId={Feed.id} />}
+          {Feed.showComments && (
+  <div className="transition-all duration-300 ease-in-out opacity-0 scale-95 animate-fade-in"
+       style={{ opacity: Feed.showComments ? 1 : 0, transform: Feed.showComments ? "scale(1)" : "scale(0.95)" }}>
+    <Comment />
+  </div>
+)}
         </div>
       ))}
     </div>
