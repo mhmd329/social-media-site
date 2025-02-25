@@ -56,16 +56,16 @@ const Storyies = () => {
           />
 
           {/* 🔹 زر الإضافة */}
-          <button className="absolute bottom-3 flex items-center gap-2 px-3 py-2 bg-blue-300 text-white rounded-full shadow-lg hover:bg-blue-600 transition border-4">
-            <FaPlus className="text-lg" />
-            <span className="text-sm font-semibold">Add Story</span>
-            <input
-              type="file"
-              accept="image/*"
-              className="absolute inset-0 opacity-0 cursor-pointer"
-              onChange={handleAddStory}
-            />
-          </button>
+         
+      <button className="absolute bottom-3 flex flex-col items-center justify-center bg-blue-500 text-white w-10 h-10 rounded-full shadow-lg hover:bg-blue-700 transition cursor-pointer">
+        <FaPlus className="text-xl" />
+        <input
+          type="file"
+          accept="image/*"
+          className="absolute inset-0 opacity-0 "
+          onChange={handleAddStory}
+        />
+      </button>
         </div>
 
         {/* باقي القصص */}

@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import SocialProvider from "./context/SocialContext";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <SocialProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+   
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+  
   </SocialProvider>
 );
 
