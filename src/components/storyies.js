@@ -45,7 +45,7 @@ const Storyies = () => {
 
   return (
     <div className="overflow-x-auto py-4">
-      <div className="flex gap-3 p-3 bg-blue-300 rounded-lg max-w-xl mx-auto overflow-x-auto scrollbar-hide">
+      <div className="flex gap-3 p-3 bg-blue-300 rounded-lg max-w-[700px] mx-auto overflow-x-auto scrollbar-hide">
         {/* زر "إضافة ستوري" */}
         <div className="relative w-24 h-40 flex flex-col items-center bg-white rounded-lg overflow-hidden shadow-lg shrink-0 hover:shadow-xl transition">
           {/* صورة البروفايل */}

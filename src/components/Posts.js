@@ -13,11 +13,11 @@ const Posts = () => {
     );
   }
   return (
-    <div className="max-w-2xl mx-auto mt-6 space-y-6 px-2 sm:px-4 bg-gray-50 py-4 rounded-lg">
+    <div className="max-w-2xl mx-auto mt-6 space-y-6 px-2 sm:px-4 bg-blue-100 py-4 rounded-lg">
     {posts.map((Feed) => (
       <div
         key={Feed.id}
-        className="bg-white border border-gray-300 rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-300"
+        className="bg-blue-50 border border-gray-300 rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-300"
       >
         {/* Header */}
         <div className="flex items-center justify-between mb-3">

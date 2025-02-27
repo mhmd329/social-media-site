@@ -36,7 +36,7 @@ const NewPost = () => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-5 border border-gray-200 w-full max-w-xl mx-auto">
+    <div className="bg-white shadow-lg rounded-xl p-5 border border-gray-200 w-full max-w-[700px] mx-auto">
     {/* حقل إدخال النص */}
     <textarea
       className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
@@ -64,7 +64,7 @@ const NewPost = () => {
       {/* زر رفع الصورة */}
       <label className="flex items-center gap-2 cursor-pointer text-blue-500 font-medium hover:text-blue-600 transition">
         <FaImage className="text-lg" />
-        <span className="hidden sm:inline">Upload Image</span>
+        <span className=" sm:inline">Upload Image</span>
         <input
           type="file"
           accept="image/*"
@@ -84,7 +84,7 @@ const NewPost = () => {
         disabled={!postText.trim() && !image}
       >
         <FaPaperPlane />
-        <span className="hidden sm:inline">Post</span>
+        <span className=" sm:inline">Post</span>
       </button>
     </div>
   </div>
