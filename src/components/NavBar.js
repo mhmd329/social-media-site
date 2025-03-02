@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaHome, FaNewspaper, FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/icon/5.png";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,11 @@ const NavBar = () => {
         <ul className="hidden md:flex space-x-8 text-lg font-semibold">
           <li className="flex items-center space-x-2 hover:text-gray-300 transition">
             <FaHome className="text-2xl" />
-            <a href="#">Home Page</a>
-          </li>
+            <Link to="/profile/123">Your Profile</Link>
+            </li>
           <li className="flex items-center space-x-2 hover:text-gray-300 transition">
             <FaNewspaper className="text-2xl" />
-            <a href="#">News Feed</a>
+            <Link to="/">News Feed</Link>
           </li>
         </ul>
 
