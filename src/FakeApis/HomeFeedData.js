@@ -37,6 +37,7 @@ const Feeds = [
         like: 32,
         name: 'Lana White',
         feedImage: FeedImage1,
+        feedCoverImage: FeedImage1,
         feedProfile: feedProfile1,
         desc: 'Beautiful day',
         comments: [
@@ -53,6 +54,7 @@ const Feeds = [
         like: 22,
         name: 'Kane Mane',
         feedImage: FeedImage2,
+        feedCoverImage: FeedImage2,
         feedProfile: feedProfile2,
         desc: '☀️',
         comments: [
@@ -68,6 +70,7 @@ const Feeds = [
         like: 60,
         name: 'Dodo Vincey',
         feedImage: FeedImage3,
+        feedCoverImage: FeedImage3,
         feedProfile: feedProfile3,
         desc: 'Exploring the city! 🏙️',
         comments: [
@@ -86,6 +89,7 @@ const Feeds = [
         like: 20,
         name: 'Emaly Shea',
         feedImage: FeedImage4,
+        feedCoverImage: FeedImage4,
         feedProfile: feedProfile4,
         desc: 'ouf of city ☕',
         comments: [
@@ -103,6 +107,7 @@ const Feeds = [
         like: 54,
         name: 'Fatema Anny',
         feedImage: FeedImage5,
+        feedCoverImage: FeedImage5,
         feedProfile: feedProfile5,
         desc: 'Morning shotout! 💪',
         comments: [
@@ -119,6 +124,7 @@ const Feeds = [
         like: 20,
         name: 'Evrahim Alli',
         feedImage: FeedImage6,
+        feedCoverImage: FeedImage6,
         feedProfile: feedProfile6,
         desc: 'i try to work from anywhere 📖',
         comments: [
@@ -134,6 +140,7 @@ const Feeds = [
         like: 14,
         name: 'Mohammed Nabi',
         feedImage: FeedImage7,
+        feedCoverImage: FeedImage7,
         feedProfile: feedProfile7,
         desc: 'Road trip adventure! 🚗',
         comments: [
@@ -152,6 +159,7 @@ const Feeds = [
         like: 4,
         name: 'Ema Cliopetra',
         feedImage: FeedImage8,
+        feedCoverImage: FeedImage8,
         feedProfile: feedProfile8,
         desc: 'Best girl in town! ',
         comments: [
@@ -168,6 +176,7 @@ const Feeds = [
         like: 7,
         name: 'Anna Silvia',
         feedImage: FeedImage9,
+        feedCoverImage: FeedImage9,
         feedProfile: feedProfile9,
         desc: 'nice day 🌅',
         comments: [
@@ -185,6 +194,7 @@ const Feeds = [
         like: 14,
         name: 'jessy',
         feedImage: FeedImage10,
+        feedCoverImage: FeedImage10,
         feedProfile: feedProfile10,
         desc: 'family',
         comments: [
@@ -201,6 +211,7 @@ const Feeds = [
         like: 11,
         name: 'morreta',
         feedImage: FeedImage11,
+        feedCoverImage: FeedImage11,
         feedProfile: feedProfile11,
         desc: 'i love this horse, it`s kindly ',
         comments: [
@@ -216,6 +227,7 @@ const Feeds = [
         like: 28,
         name: 'ph: youssef',
         feedImage: FeedImage12,
+        feedCoverImage: FeedImage12,
         feedProfile: feedProfile12,
         desc: '',
         comments: [
@@ -232,6 +244,7 @@ const Feeds = [
         like: 17,
         name: 'jordella',
         feedImage: FeedImage13,
+        feedCoverImage: FeedImage13,
         feedProfile: feedProfile13,
         desc: 'new collection <>',
         comments: [

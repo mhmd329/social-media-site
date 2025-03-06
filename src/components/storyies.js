@@ -34,12 +34,13 @@ const Storyies = () => {
     if (file) {
       const imageUrl = URL.createObjectURL(file);
       const newStory = {
-        id: Date.now(),
+        id: "me",
         story: imageUrl,
         storyProfile: CurrentUser[0].ProfileImage,
         name: CurrentUser[0].name,
       };
       setStoryies([newStory, ...storyies]);
+     
     }
   };
 

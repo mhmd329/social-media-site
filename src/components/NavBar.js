@@ -18,7 +18,7 @@ const NavBar = () => {
         <ul className="hidden md:flex space-x-8 text-lg font-semibold">
           <li className="flex items-center space-x-2 hover:text-gray-300 transition">
             <FaHome className="text-2xl" />
-            <Link to="/profile/123">Your Profile</Link>
+            <Link to="/profile/me">Your Profile</Link>
             </li>
           <li className="flex items-center space-x-2 hover:text-gray-300 transition">
             <FaNewspaper className="text-2xl" />
