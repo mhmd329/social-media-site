@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { FaImage, FaPaperPlane } from "react-icons/fa";
-import { SocialContext } from "../context/SocialContext"; // ✅ تأكد من استخدام SocialContext من SocialProvider
+import { SocialContext } from "../context/SocialContext"; 
 import CurrentUser from "../FakeApis/CurrentUserData";
 
 const NewPost = () => {
@@ -26,7 +26,7 @@ const NewPost = () => {
           name: CurrentUser[0].name,
           date: "just now",
           comments: [],
-          like: [], // لا يوجد إعجابات عند إنشاء المنشور
+          like: [], 
         },
         ...prevPosts,
       ]);
@@ -37,7 +37,7 @@ const NewPost = () => {
 
   return (
     <div className="bg-white shadow-lg rounded-xl p-5 border border-gray-200 w-full max-w-[700px] mx-auto">
-      {/* حقل إدخال النص */}
+    
       <textarea
         className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
         placeholder="What's on your mind?"
@@ -63,7 +63,7 @@ const NewPost = () => {
         </div>
       )}
 
-      {/* الأزرار */}
+    
       <div className="flex justify-between items-center mt-4">
         {/* زر رفع الصورة */}
         <label className="flex items-center gap-2 cursor-pointer text-blue-500 font-medium hover:text-blue-600 transition">

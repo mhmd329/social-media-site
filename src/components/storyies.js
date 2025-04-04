@@ -17,7 +17,7 @@ const Storyies = () => {
     const currentIndex = storyies.findIndex((s) => s.id === selectedStory.id);
     if (currentIndex < storyies.length - 1) {
       setSelectedStory(storyies[currentIndex + 1]);
-    }else{
+    } else {
       setIsModalOpen(false)
     }
   };
@@ -25,7 +25,7 @@ const Storyies = () => {
   const handlePrevStory = () => {
     const currentIndex = storyies.findIndex((s) => s.id === selectedStory.id);
     if (currentIndex > 0) {
-      setSelectedStory(storyies[currentIndex - 1]); // ✅ إصلاح المشكلة هنا
+      setSelectedStory(storyies[currentIndex - 1]);
     }
   };
 
@@ -40,7 +40,7 @@ const Storyies = () => {
         name: CurrentUser[0].name,
       };
       setStoryies([newStory, ...storyies]);
-     
+
     }
   };
 
@@ -57,22 +57,22 @@ const Storyies = () => {
           />
 
           {/* 🔹 زر الإضافة */}
-         
-      <button className="absolute bottom-3 flex flex-col items-center justify-center bg-blue-500 text-white w-10 h-10 rounded-full shadow-lg hover:bg-blue-700 transition cursor-pointer">
-        <FaPlus className="text-xl" />
-        <input
-          type="file"
-          accept="image/*"
-          className="absolute inset-0 opacity-0 "
-          onChange={handleAddStory}
-        />
-      </button>
+
+          <button className="absolute bottom-3 flex flex-col items-center justify-center bg-blue-500 text-white w-10 h-10 rounded-full shadow-lg hover:bg-blue-700 transition cursor-pointer">
+            <FaPlus className="text-xl" />
+            <input
+              type="file"
+              accept="image/*"
+              className="absolute inset-0 opacity-0 "
+              onChange={handleAddStory}
+            />
+          </button>
         </div>
 
         {/* باقي القصص */}
         {storyies.map((story) => (
           <div
-            onClick={() => handleOpenStory(story)} // ✅ إصلاح المشكلة هنا
+            onClick={() => handleOpenStory(story)}
             key={story.id}
             className="relative w-24 h-40 flex flex-col items-center bg-white rounded-lg overflow-hidden shadow-lg shrink-0 hover:shadow-xl transition cursor-pointer"
           >
@@ -99,7 +99,7 @@ const Storyies = () => {
       </div>
 
       {/* المودال لعرض الستوري */}
-      {isModalOpen &&  (
+      {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <button
             className="absolute top-5 right-5 text-white text-2xl"
@@ -114,7 +114,7 @@ const Storyies = () => {
             <FaArrowLeft />
           </button>
           <div className="max-w-lg w-full">
-            <img alt="profile" src={selectedStory.storyProfile}   className="w-10 h-10 rounded-full border-2 border-blue-300 absolute top-12 left-42"/>
+            <img alt="profile" src={selectedStory.storyProfile} className="w-10 h-10 rounded-full border-2 border-blue-300 absolute top-12 left-42" />
             <img
               alt="story"
               src={selectedStory.story}

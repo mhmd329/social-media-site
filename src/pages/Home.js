@@ -6,9 +6,9 @@ import Posts from '../components/Posts'
 const Home = () => {
   return (
     <div>
-        <Storyies/>
-        <NewPost/>
-        <Posts/>
+      <Storyies />
+      <NewPost />
+      <Posts />
     </div>
   )
 }

@@ -44,7 +44,7 @@ const Profile = () => {
         <p className="text-gray-500">{userUsername}</p>
       </div>
 
-    
+
     </div>
   );
 };

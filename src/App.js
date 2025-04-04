@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ProfilePage from "./pages/ProfilePage"; // صفحة الملف الشخصي
 import NavBar from "./components/NavBar"; // القائمة العلوية
-import LeftBar from "./components/LeftBar"; // الشريط الجانبي
+
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <div className="bg-blue-200 text-white min-h-screen">
         {/* المكونات الثابتة */}
         <NavBar />
-        <LeftBar />
+
 
         {/* منطقة التغيير بناءً على المسار */}
         <div className="p-4">
@@ -21,7 +21,7 @@ const App = () => {
           </Routes>
         </div>
 
-       
+
       </div>
     </Router>
   );
