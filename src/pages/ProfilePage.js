@@ -28,11 +28,13 @@ const Profile = () => {
       <div className="relative">
         <img
           src={coverPhoto}
+          loading="lazy"
           alt="Cover"
           className="w-full h-56 object-cover rounded-lg"
         />
         <img
           src={profileImage}
+          loading="lazy"
           alt={userName}
           className="w-24 h-24 rounded-full absolute bottom-0 left-4 transform translate-y-1/2 border-4 border-white"
         />

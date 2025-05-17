@@ -28,6 +28,7 @@ const Posts = () => {
             <div className="flex items-center gap-3">
               {/* ✅ عند الضغط على الصورة، يتم توجيه المستخدم إلى صفحة البروفايل */}
               <img
+                loading="lazy"
                 alt="profile"
                 src={Feed.feedProfile}
                 className="w-12 h-12 rounded-full border border-gray-300 cursor-pointer"
@@ -46,6 +47,7 @@ const Posts = () => {
           {/* Post Image */}
           {Feed.feedImage && (
             <img
+              loading="lazy"
               alt="post"
               src={Feed.feedImage}
               className="w-full h-auto object-cover max-h-[500px] rounded-lg shadow-sm"
@@ -56,9 +58,8 @@ const Posts = () => {
           <div className="flex justify-between mt-3 text-gray-600">
             <button
               onClick={() => handleLike(Feed.id)}
-              className={`flex items-center space-x-2 transition-all duration-200 px-4 py-2 rounded-lg ${
-                Feed.liked ? "text-blue-600 bg-blue-100" : "hover:bg-gray-100"
-              }`}
+              className={`flex items-center space-x-2 transition-all duration-200 px-4 py-2 rounded-lg ${Feed.liked ? "text-blue-600 bg-blue-100" : "hover:bg-gray-100"
+                }`}
             >
               <FaThumbsUp className="text-xl" />
               <span className="text-sm sm:text-base">Like {Feed.like}</span>

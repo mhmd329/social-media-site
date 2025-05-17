@@ -12,7 +12,8 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="#a" className="text-2xl font-bold flex items-center">
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Logo" className="h-10 w-auto" loading="lazy"
+          />
         </a>
         <MessagesLayout />
 

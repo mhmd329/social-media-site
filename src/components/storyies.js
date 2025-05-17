@@ -51,6 +51,7 @@ const Storyies = () => {
         <div className="relative w-24 h-40 flex flex-col items-center bg-white rounded-lg overflow-hidden shadow-lg shrink-0 hover:shadow-xl transition">
           {/* صورة البروفايل */}
           <img
+            loading="lazy"
             alt="profile"
             src={CurrentUser[0].ProfileImage}
             className="w-10 h-10 rounded-full border-2 border-blue-300 absolute top-2 left-2"
@@ -78,6 +79,7 @@ const Storyies = () => {
           >
             {/* صورة الستوري */}
             <img
+              loading="lazy"
               alt="story"
               src={story.story}
               className="w-full h-28 object-cover"
@@ -85,6 +87,7 @@ const Storyies = () => {
 
             {/* صورة البروفايل */}
             <img
+              loading="lazy"
               alt="profile"
               src={story.storyProfile}
               className="w-10 h-10 rounded-full border-2 border-blue-300 absolute top-2 left-2"
@@ -114,8 +117,10 @@ const Storyies = () => {
             <FaArrowLeft />
           </button>
           <div className="max-w-lg w-full">
-            <img alt="profile" src={selectedStory.storyProfile} className="w-10 h-10 rounded-full border-2 border-blue-300 absolute top-12 left-42" />
+            <img alt="profile" src={selectedStory.storyProfile} loading="lazy"
+              className="w-10 h-10 rounded-full border-2 border-blue-300 absolute top-12 left-42" />
             <img
+              loading="lazy"
               alt="story"
               src={selectedStory.story}
               className="w-full h-[500px] object-contain rounded-lg"
